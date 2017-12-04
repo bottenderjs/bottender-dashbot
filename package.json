@@ -1,6 +1,6 @@
 {
   "name": "bottender-dashbot",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Middlewares for using Dashbot with Bottender.",
   "main": "lib/index.js",
   "keywords": [
