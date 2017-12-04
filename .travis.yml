@@ -10,3 +10,7 @@ cache:
 script:
   - npm run lint
   - npm run testonly:cov
+
+notifications:
+  email:
+    on_success: never
