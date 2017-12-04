@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/bottenderjs/bottender-dashbot.svg?branch=master)](https://travis-ci.org/bottenderjs/bottender-dashbot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> Middlewares for using [Dashbot](https://www.dashbot.io/) with [Bottender](https://github.com/Yoctol/bottender).
+> Middleware for using [Dashbot](https://www.dashbot.io/) with [Bottender](https://github.com/Yoctol/bottender).
 
 ## Installation
 
