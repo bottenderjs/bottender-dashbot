@@ -4,7 +4,8 @@
 [![Build Status](https://travis-ci.org/bottenderjs/bottender-dashbot.svg?branch=master)](https://travis-ci.org/bottenderjs/bottender-dashbot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> Middleware for using [Dashbot](https://www.dashbot.io/) with [Bottender](https://github.com/Yoctol/bottender).
+> Middleware for using [Dashbot](https://www.dashbot.io/) with
+> [Bottender](https://github.com/Yoctol/bottender).
 
 ## Installation
 
@@ -39,6 +40,25 @@ const server = createServer(bot, {
 server.listen(5000, () => {
   console.log('server is running on 5000 port...');
 });
+```
+
+## Server
+
+Supported server:
+
+1. express
+2. koa
+
+### [express](https://github.com/expressjs/express)
+
+```js
+const dashbotMiddleware = require('bottender-dashbot/express');
+```
+
+### [koa](https://github.com/koajs/koa)
+
+```js
+const dashbotMiddleware = require('bottender-dashbot/koa');
 ```
 
 ## Contributing
