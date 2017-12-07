@@ -7,8 +7,8 @@ export default function dashbotMiddleware(bot, { apiKey, platform }) {
 
   setInterceptors(bot, dashbot);
 
-  return (req, res, next) => {
-    dashbot.logIncoming(req.body);
+  return ({ request }, next) => {
+    dashbot.logIncoming(request.body);
 
     next();
   };
