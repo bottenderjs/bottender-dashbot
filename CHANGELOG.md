@@ -1,3 +1,7 @@
-0.1.0 / 2017-12-04
-==================
-- [new] Support express middleware
+# 0.2.0 / 2017-12-07
+
+* [new] Support koa middleware
+
+# 0.1.0 / 2017-12-04
+
+* [new] Support express middleware
