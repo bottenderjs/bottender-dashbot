@@ -1,7 +1,5 @@
 export default function setInterceptors(bot, dashbot) {
-  const { client } = bot.connector;
-  const accessToken = client.accessToken;
-  const axios = client.axios;
+  const { client: { accessToken, axios, version } } = bot.connector;
 
   // Add a response interceptor
   axios.interceptors.response.use(response => {
@@ -9,7 +7,7 @@ export default function setInterceptors(bot, dashbot) {
     if (/graph\.facebook\.com.*\/me\/messages/.test(config.url)) {
       const { recipient: { id }, message: { text } } = JSON.parse(config.data);
       const requestData = {
-        url: `https://graph.facebook.com/v${client.version}/me/messages`,
+        url: `https://graph.facebook.com/v${version}/me/messages`,
         qs: { access_token: accessToken },
         method: 'POST',
         json: {
