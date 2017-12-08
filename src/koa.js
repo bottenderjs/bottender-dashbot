@@ -10,6 +10,6 @@ export default function dashbotMiddleware(bot, { apiKey, platform }) {
   return ({ request }, next) => {
     dashbot.logIncoming(request.body);
 
-    next();
+    return next();
   };
 }
